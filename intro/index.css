@@ -26,6 +26,8 @@ body {
   font-family: "Mulish", sans-serif;
   color: var(--color-title);
   line-height-step: 1fr;
+  opacity: 0;
+  transition: opacity 0.4s;
 }
 
 .theme-btn {
