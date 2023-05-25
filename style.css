@@ -11,6 +11,8 @@
   --color-sec: #e8b4d3;
   --color-grey: #3a3663;
   --color-btn-bg: #3820d5e2;
+  --color-field: #513cd8e2;
+  --color-field-bg: #3b26c5a2;
 }
 
 .light-mode {
@@ -52,91 +54,71 @@ body {
   pointer-events: none;
 }
 
-.intro-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  min-height: 100vh;
-}
-.intro-content .right-header {
+h1 {
+  font-weight: 800;
+  font-size: 3rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  padding-right: 18rem;
+  align-items: center;
+  padding-top: 2rem;
 }
-.intro-content .right-header .image {
-  padding-left: 4rem;
-  width: 130%;
-  height: 500px;
-}
-.intro-content .right-header .image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: all 0.3s ease-in-out;
-  border-radius: 14%;
-  filter: grayscale(100%);
-  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.8);
-}
-.intro-content .right-header .image img:hover {
-  filter: grayscale(0);
-  box-shadow: 1px 3px 10px var(--color-sec);
-  transform: translateY(-5px);
-  transition: all 0.4s ease-in-out;
-}
-.intro-content .left-header {
+
+.form-con {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  padding-left: 5rem;
+  align-items: center;
 }
-.intro-content .left-header h1 {
-  font-size: 2.8rem;
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 4%;
+  padding: 15px 0;
   color: var(--color-title);
+  border-radius: 24px;
+  background-color: var(--color-field);
+  box-shadow: 2px 5px 18px rgba(0, 0, 0, 0.45);
+}
+form .paper {
+  margin-left: 2%;
+}
+form input {
+  margin: 0.5%;
+  margin-bottom: 0.5%;
+  border-radius: 24px;
+  font-weight: inherit;
+  font-size: inherit;
   font-family: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.intro-content .left-header p {
-  padding-top: 3%;
-}
-.intro-content .left-header .btn-con {
-  display: flex;
-  align-self: flex-start;
-  padding-top: 5%;
-}
-.intro-content .left-header .continue-btn {
-  border-radius: 30px;
-  color: inherit;
-  font-size: 1.2rem;
-  width: auto;
-  height: auto;
-  position: relative;
-  border: 2px solid var(--color-sec);
-  display: flex;
-  align-self: flex-start;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background-color: transparent;
-  padding: 0.4rem 1.25rem;
-}
-.intro-content .left-header .continue-btn i {
-  font-size: 2.4rem;
+  padding: 0.5rem 0.8rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-field-bg);
+  width: 23%;
   color: var(--color-title);
+  resize: none;
 }
-.intro-content .left-header .continue-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 0;
-  height: 100%;
-  background-color: var(--color-sec);
-  transition: width 0.2s linear;
-  z-index: -1;
+form button {
+  margin-left: 16px;
+  border-radius: 24px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.3rem 0.5rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-field-bg);
+  width: -moz-fit-content;
+  width: fit-content;
+  color: var(--color-title);
+  resize: none;
 }
-.intro-content .left-header .continue-btn:hover::before {
-  width: 100%;
+form .result {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 22px;
 }/*# sourceMappingURL=style.css.map */
