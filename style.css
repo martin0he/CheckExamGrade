@@ -103,6 +103,7 @@ form input {
   resize: none;
 }
 form button {
+  cursor: pointer;
   margin-left: 16px;
   border-radius: 24px;
   font-weight: inherit;
